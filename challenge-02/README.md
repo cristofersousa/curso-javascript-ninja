@@ -3,30 +3,43 @@
 Nesse exercício, você está livre para escolher os nomes para suas variáveis e funções! :smile:
 
 ```js
+
 // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
-?
+
+===
+function soma(a,b) {
+ return  a+b;
+}
+console.log(soma(3,2));
+===
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
-?
-
+===
+ var calcula = soma(3,2) + 5;
+===
 // Qual o valor atualizado dessa variável?
-?
+ > 10
 
 // Declare uma nova variável, sem valor.
-?
+ > var qualquer;
 
 /*
 Crie uma função que adicione um valor à variável criada acima, e retorne a string:
     O valor da variável agora é VALOR.
 Onde VALOR é o novo valor da variável.
 */
-?
-
+===
+ function injectValue() {
+     qualquer = 'O valor da variável agora é VALOR';
+    return qualquer;
+ }
+===
 // Invoque a função criada acima.
-?
+  injectValue();
 
 // Qual o retorno da função? (Use comentários de bloco).
-?
+> qualquer
+"O valor da variável agora é VALOR"
 
 /*
 Crie uma função com as seguintes características:
@@ -35,19 +48,25 @@ Crie uma função com as seguintes características:
     Preencha todos os valores corretamente!
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
-?
+function checkInstance(x,y,z) {
+    if (x, y, z == undefined) {
+        console.log('Preencha todos os valores corretamente!')
+    }
+    return (x * y * z) + 2;
+}
 
 // Invoque a função criada acima, passando só dois números como argumento.
-?
+> checkInstance(2,2);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+> Preencha todos os valores corretamente!
+> NaN
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
-?
+> checkInstance(2,2,2);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+> 10
 
 /*
 Crie uma função com as seguintes características:
@@ -58,7 +77,9 @@ Crie uma função com as seguintes características:
 5. Se nenhum argumento for passado, retorne o valor booleano `false`.
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
-?
+ function validArguments() {
+     
+ }
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
 ?
